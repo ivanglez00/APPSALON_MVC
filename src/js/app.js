@@ -132,7 +132,7 @@ async function consultarAPI() {
 
 function mostrarServicios(servicios) {
     servicios.forEach(servicio => {
-        const { id, nombre, precio } = servicio;
+        const { id=[0], nombre, precio } = servicio;
 
         const nombreSrevicio = document.createElement('P');
         nombreSrevicio.classList.add('nombre-servicio');
