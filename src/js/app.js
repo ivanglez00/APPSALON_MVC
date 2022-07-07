@@ -117,7 +117,7 @@ function paginaAnterior() {
 
 async function consultarAPI() {
     try {
-        const url = '${server}/api/servicios';
+        const url = `${server}/api/servicios`;
        // const url = `${server}/api/servicios`;
         const resultado = await fetch(url);
         const servicios = await resultado.json();
